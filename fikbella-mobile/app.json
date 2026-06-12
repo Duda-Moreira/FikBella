@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "fikbella-mobile",
+    "slug": "fikbella-mobile",
+    "version": "1.0.0",
+    "scheme": "fikbella",
+    "web": {
+      "bundler": "metro"
+    },
+    "assetBundlePatterns": ["**/*"]
+  }
+}

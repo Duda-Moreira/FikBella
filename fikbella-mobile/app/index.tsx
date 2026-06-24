@@ -1,9 +1,5 @@
 import { useState } from 'react';
-import {
-  SafeAreaView, ScrollView, View, Text, TextInput,
-  Pressable,
-  KeyboardAvoidingView,
-  Platform, } from 'react-native';
+import { SafeAreaView, ScrollView, View, Text, TextInput, Pressable, KeyboardAvoidingView, Platform, Image } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Mail, Lock, Eye, EyeOff, ArrowRight } from 'lucide-react-native';
 
@@ -23,19 +19,24 @@ export default function Login() {
           className="flex-1"
         >
           <ScrollView
-            contentContainerStyle={{ flexGrow: 1, justifyContent: 'center', paddingHorizontal: 24 }}
+            contentContainerStyle={{ flexGrow: 1, paddingHorizontal: 24, paddingTop: 50 }}
             keyboardShouldPersistTaps="handled"
             showsVerticalScrollIndicator={false}
           >
             {/* título */}
             <View className="items-center mb-10">
+              <Image
+              source={require('../assets/LOGOFIKBELLA.jpg')}
+              style={{ width: 200, height: 200, paddingBottom: 20, marginBottom: 30 }}
+              resizeMode="contain"
+              />
               <Text className="text-3xl font-bold text-pink-600">FikBella</Text>
               <Text className="text-gray-500 text-sm mt-1">Realçando sua beleza natural</Text>
             </View>
 
             {/* email */}
             <Text className="text-gray-700 font-medium mb-2">E-mail</Text>
-            <View className="flex-row items-center bg-pink-50 rounded-2xl px-4 py-3.5 mb-5">
+            <View className="flex-row items-center bg-pink-50 rounded-2xl px-4 py-3.5 mb-20">
               <Mail size={18} color="#ec4899" />
               <TextInput
                 placeholder="nome@exemplo.com"
@@ -50,7 +51,7 @@ export default function Login() {
 
             {/* senha */}
             <Text className="text-gray-700 font-medium mb-2">Senha</Text>
-            <View className="flex-row items-center bg-pink-50 rounded-2xl px-4 py-3.5">
+            <View className="flex-row items-center bg-pink-50 rounded-2xl px-4 py-3.5 mb-20">
               <Lock size={18} color="#ec4899" />
               <TextInput
                 placeholder="••••••••"

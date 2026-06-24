@@ -13,6 +13,9 @@
     "plugins": [
       "expo-router"
     ],
-    "userInterfaceStyle": "automatic"
+    "userInterfaceStyle": "automatic",
+    "android": {
+      "package": "com.mahshuu.fikbellamobile"
+    }
   }
 }

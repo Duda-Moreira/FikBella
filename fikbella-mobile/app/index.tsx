@@ -15,7 +15,6 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
-export default function Index() {
   return (
     <LinearGradient
       colors={["#fce7f3", "#fdf2f8", "#ffffff"]}

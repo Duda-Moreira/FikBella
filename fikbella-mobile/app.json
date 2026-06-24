@@ -7,6 +7,14 @@
     "web": {
       "bundler": "metro"
     },
-    "assetBundlePatterns": ["**/*"]
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      "expo-router"
+    ],
+    "android": {
+      "package": "com.mahshuu.fikbellamobile"
+    }
   }
 }
